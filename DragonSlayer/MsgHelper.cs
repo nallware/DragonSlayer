@@ -114,11 +114,11 @@
             set { processType = value; }
         }
 
-        public bool isEmpty(UserMessage msg)
+        public bool isEmpty()
         {
             bool empty = true;
 
-            foreach (var prop in msg.GetType().GetProperties())
+            foreach (var prop in this.GetType().GetProperties())
             {
                 if (prop.ToString() != "")
                 {
