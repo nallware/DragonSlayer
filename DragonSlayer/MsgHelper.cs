@@ -128,6 +128,19 @@
             }
             return empty;
         }
+
+        public int Count()
+        {
+            int ct = 0;
+            foreach (var prop in this.GetType().GetProperties())
+            {
+                if (prop.ToString() != "")
+                {
+                    ct++;
+                }
+            }
+            return ct;
+        }
     }
 }
 
