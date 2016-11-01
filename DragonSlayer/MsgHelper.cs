@@ -1,4 +1,6 @@
-﻿namespace DragonSlayer
+﻿using System.Collections.Generic;
+
+namespace DragonSlayer
 {
 
     public class UserMessage
@@ -131,15 +133,15 @@
 
         public int Count()
         {
-            int ct = 0;
+            List<string> list = new List<string>();
             foreach (var prop in this.GetType().GetProperties())
             {
                 if (prop.ToString() != "")
                 {
-                    ct++;
+                    list.Add(prop.ToString());
                 }
             }
-            return ct;
+            return list.Count;
         }
     }
 }
