@@ -113,6 +113,21 @@
             get { return processType; }
             set { processType = value; }
         }
+
+        public bool isEmpty(UserMessage msg)
+        {
+            bool empty = true;
+
+            foreach (var prop in msg.GetType().GetProperties())
+            {
+                if (prop.ToString() != "")
+                {
+                    empty = false;
+                }
+
+            }
+            return empty;
+        }
     }
 }
 
