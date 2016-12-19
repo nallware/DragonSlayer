@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Drawing;
 namespace DragonSlayer
 {
     public static class WinformHelper
@@ -60,6 +60,47 @@ namespace DragonSlayer
             }
         }
 
+
+        public static void AddDGVButtons(DataGridView dgvMain)
+        {
+            DataGridViewButtonColumn updateCol = new DataGridViewButtonColumn();
+            updateCol.Name = "Update";
+            updateCol.Text = "Update";
+            updateCol.UseColumnTextForButtonValue = true;
+            if (dgvMain.Columns["Update"] == null)
+            {
+                dgvMain.Columns.Add(updateCol);
+            }
+            DataGridViewButtonColumn deleteCol = new DataGridViewButtonColumn();
+            deleteCol.Name = "Delete";
+            deleteCol.Text = "Delete";
+            deleteCol.UseColumnTextForButtonValue = true;
+            if (dgvMain.Columns["Delete"] == null)
+            {
+                dgvMain.Columns.Add(deleteCol);
+            }
+            DataGridViewButtonColumn insertCol = new DataGridViewButtonColumn();
+            insertCol.Name = "Insert";
+            insertCol.Text = "Insert";
+            insertCol.UseColumnTextForButtonValue = true;
+            if (dgvMain.Columns["Insert"] == null)
+            {
+                dgvMain.Columns.Add(insertCol);
+            }
+            dgvMain.Columns["EquipmentId"].ReadOnly = true;
+            dgvMain.Columns["EquipmentId"].DefaultCellStyle.BackColor = SystemColors.GradientInactiveCaption;
+            dgvMain.Columns["EquipmentId"].DefaultCellStyle.ForeColor = SystemColors.InactiveCaptionText;
+            dgvMain.Columns["EquipmentId"].DefaultCellStyle.SelectionBackColor = SystemColors.InactiveCaption;
+            dgvMain.Columns["EquipmentId"].DefaultCellStyle.SelectionForeColor = SystemColors.InactiveCaptionText;
+            //DefaultCellStyle.ForeColor = SystemColors.InactiveCaptionText;
+            //DataGridViewButtonColumn dCol = new DataGridViewButtonColumn();
+            //dCol.Name = "nil";
+            //if (dgvMain.Columns["nil"] == null)
+            //{
+            //    dgvMain.Columns.Add(dCol);
+            //}
+
+        }
 
     }
 }
