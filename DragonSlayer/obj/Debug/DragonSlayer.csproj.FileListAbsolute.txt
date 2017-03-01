@@ -3,3 +3,8 @@ C:\Users\knall\Documents\VS15Projects_Local\_testing\DragonSlayer\DragonSlayer\b
 C:\Users\knall\Documents\VS15Projects_Local\_testing\DragonSlayer\DragonSlayer\obj\Debug\DragonSlayer.csprojResolveAssemblyReference.cache
 C:\Users\knall\Documents\VS15Projects_Local\_testing\DragonSlayer\DragonSlayer\obj\Debug\DragonSlayer.dll
 C:\Users\knall\Documents\VS15Projects_Local\_testing\DragonSlayer\DragonSlayer\obj\Debug\DragonSlayer.pdb
+C:\Users\knall\Documents\VS15Projects_Local\MYDEV\DragonSlayer\DragonSlayer\bin\Debug\DragonSlayer.dll
+C:\Users\knall\Documents\VS15Projects_Local\MYDEV\DragonSlayer\DragonSlayer\bin\Debug\DragonSlayer.pdb
+C:\Users\knall\Documents\VS15Projects_Local\MYDEV\DragonSlayer\DragonSlayer\obj\Debug\DragonSlayer.csprojResolveAssemblyReference.cache
+C:\Users\knall\Documents\VS15Projects_Local\MYDEV\DragonSlayer\DragonSlayer\obj\Debug\DragonSlayer.dll
+C:\Users\knall\Documents\VS15Projects_Local\MYDEV\DragonSlayer\DragonSlayer\obj\Debug\DragonSlayer.pdb

@@ -15,6 +15,7 @@ namespace DragonSlayer
             }
             return dt;
         }
+        //need to enter comments here--git testing
 
 
         public static List<string> Query2StringList(string listQuery, string sqlConString)
